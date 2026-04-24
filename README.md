@@ -58,7 +58,7 @@ fullstacks/
     │   └── index.js       # React entry point
     └── package.json
 ```
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 > [!IMPORTANT]
 > **Missing `node_modules`?**
