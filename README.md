@@ -66,8 +66,6 @@ fullstacks/
 > You **must** run `npm install` in *both* the `backend` and `frontend` folders after downloading this project before trying to run `npm start`
 ---
 
-##  Installation & Setup
-
 ### Prerequisites
 Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/) (v14 or higher)
