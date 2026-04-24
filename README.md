@@ -119,6 +119,100 @@ URL: http://localhost:5000/api/team
 Method: GET
 Expected Response:
  Team API
+2. Get All Members
+URL: http://localhost:5000/api/members
+Method: GET
+Expected Response:
+
+[
+  {
+    "_id": "member_id_here",
+    "name": "John Doe",
+    "role": "Full Stack Developer",
+    "email": "john@example.com",
+    "phone": "+1234567890",
+    "rollNumber": "101",
+    "year": "2nd Year",
+    "bio": "Passionate developer",
+    "image": "timestamp-filename.jpg",
+    "joinDate": "2026-04-23T10:30:00Z",
+    "createdAt": "2026-04-23T10:30:00Z",
+    "updatedAt": "2026-04-23T10:30:00Z"
+  }
+]
+3. Get Single Member by ID
+URL: http://localhost:5000/api/members/[MEMBER_ID]
+Replace: [MEMBER_ID] with the actual member ID from the response above
+
+Example: http://localhost:5000/api/members/65abc123def456ghi789jkl
+
+Method: GET
+Expected Response:
+
+{
+  "_id": "65abc123def456ghi789jkl",
+  "name": "John Doe",
+  "role": "Full Stack Developer",
+  "email": "john@example.com",
+  "phone": "+1234567890",
+  "rollNumber": "101",
+  "year": "2nd Year",
+  "bio": "Passionate developer",
+  "image": "1682251800000-1234567890.jpg",
+  "joinDate": "2026-04-23T10:30:00Z",
+  "createdAt": "2026-04-23T10:30:00Z",
+  "updatedAt": "2026-04-23T10:30:00Z"
+}
+Testing APIs with Postman or cURL
+4. Create a New Member (POST)
+URL: http://localhost:5000/api/members
+Method: POST
+Content-Type: multipart/form-data
+
+Form Data:
+
+- name: "Sarah Johnson" (text)
+- role: "UI/UX Designer" (text)
+- email: "sarah@example.com" (text)
+- phone: "+1987654321" (text)
+- rollNumber: "102" (text)
+- year: "3rd Year" (text)
+- bio: "Creative designer with passion for UI" (text)
+- image: [Select image file] (file)
+cURL Example:
+
+curl -X POST http://localhost:5000/api/members \
+  -F "name=Sarah Johnson" \
+  -F "role=UI/UX Designer" \
+  -F "email=sarah@example.com" \
+  -F "phone=+1987654321" \
+  -F "rollNumber=102" \
+  -F "year=3rd Year" \
+  -F "bio=Creative designer with passion for UI" \
+  -F "image=@/path/to/image.jpg"
+5. Update a Member (PUT)
+URL: http://localhost:5000/api/members/[MEMBER_ID]
+Method: PUT
+Content-Type: multipart/form-data (if updating image) or application/json
+
+JSON Body Example:
+
+{
+  "name": "Sarah Johnson",
+  "role": "Senior UI/UX Designer",
+  "email": "sarah.johnson@example.com",
+  "phone": "+1987654321",
+  "rollNumber": "102",
+  "year": "3rd Year",
+  "bio": "Creative designer with 5 years experience"
+}
+6. Delete a Member (DELETE)
+URL: http://localhost:5000/api/members/[MEMBER_ID]
+Method: DELETE
+
+cURL Example:
+
+curl -X DELETE http://localhost:5000/api/members/65abc123def456ghi789jkl
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -143,7 +237,7 @@ Expected Response:
   timestamps: { createdAt, updatedAt }
 }
 ```
- CSS Styling
+## CSS Styling
 
 The application features a modern, responsive design with:
 - Gradient header with navigation
@@ -168,7 +262,7 @@ Usage
 - Proxy is configured in frontend package.json
 - All API requests are relative URLs (e.g., `/api/members`)
 
-Troubleshooting
+## Troubleshooting
 
 MongoDB Connection Error:
 - Ensure MongoDB is running locally or update MONGODB_URI in .env
@@ -182,7 +276,7 @@ CORS Issues:
 - Ensure CORS middleware is configured in server.js
 - Update proxy in frontend if backend port changed
 
-Future Enhancements
+## Future Enhancements
 
 - User authentication
 - Member profile pictures
