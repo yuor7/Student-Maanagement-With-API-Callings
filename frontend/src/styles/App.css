@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+.App {
+  background-color: #fdfbf7;
+  min-height: 100vh;
+  font-family: 'Outfit', -apple-system, sans-serif;
+  color: #4a403a;
+}
+
+.container {
+  background-color: transparent;
+}
