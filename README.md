@@ -12,7 +12,7 @@ A full-stack web application for managing team members with a React frontend and
 ✅ Delete team members  
 ✅ Responsive design  
 
-Project Structure
+ ## Project Structure
 fullstacks/
 ├── backend/               # Node.js + Express + MongoDB
 │   ├── models/           # MongoDB schemas
@@ -122,90 +122,20 @@ Expected Response:
 2. Get All Members
 URL: http://localhost:5000/api/members
 Method: GET
-Expected Response:
-
-[
-  {
-    "_id": "member_id_here",
-    "name": "John Doe",
-    "role": "Full Stack Developer",
-    "email": "john@example.com",
-    "phone": "+1234567890",
-    "rollNumber": "101",
-    "year": "2nd Year",
-    "bio": "Passionate developer",
-    "image": "timestamp-filename.jpg",
-    "joinDate": "2026-04-23T10:30:00Z",
-    "createdAt": "2026-04-23T10:30:00Z",
-    "updatedAt": "2026-04-23T10:30:00Z"
-  }
-]
 3. Get Single Member by ID
 URL: http://localhost:5000/api/members/[MEMBER_ID]
 Replace: [MEMBER_ID] with the actual member ID from the response above
-
 Example: http://localhost:5000/api/members/65abc123def456ghi789jkl
-
 Method: GET
-Expected Response:
-
-{
-  "_id": "65abc123def456ghi789jkl",
-  "name": "John Doe",
-  "role": "Full Stack Developer",
-  "email": "john@example.com",
-  "phone": "+1234567890",
-  "rollNumber": "101",
-  "year": "2nd Year",
-  "bio": "Passionate developer",
-  "image": "1682251800000-1234567890.jpg",
-  "joinDate": "2026-04-23T10:30:00Z",
-  "createdAt": "2026-04-23T10:30:00Z",
-  "updatedAt": "2026-04-23T10:30:00Z"
-}
 Testing APIs with Postman or cURL
 4. Create a New Member (POST)
 URL: http://localhost:5000/api/members
 Method: POST
 Content-Type: multipart/form-data
-
-Form Data:
-
-- name: "Sarah Johnson" (text)
-- role: "UI/UX Designer" (text)
-- email: "sarah@example.com" (text)
-- phone: "+1987654321" (text)
-- rollNumber: "102" (text)
-- year: "3rd Year" (text)
-- bio: "Creative designer with passion for UI" (text)
-- image: [Select image file] (file)
-cURL Example:
-
-curl -X POST http://localhost:5000/api/members \
-  -F "name=Sarah Johnson" \
-  -F "role=UI/UX Designer" \
-  -F "email=sarah@example.com" \
-  -F "phone=+1987654321" \
-  -F "rollNumber=102" \
-  -F "year=3rd Year" \
-  -F "bio=Creative designer with passion for UI" \
-  -F "image=@/path/to/image.jpg"
 5. Update a Member (PUT)
 URL: http://localhost:5000/api/members/[MEMBER_ID]
 Method: PUT
 Content-Type: multipart/form-data (if updating image) or application/json
-
-JSON Body Example:
-
-{
-  "name": "Sarah Johnson",
-  "role": "Senior UI/UX Designer",
-  "email": "sarah.johnson@example.com",
-  "phone": "+1987654321",
-  "rollNumber": "102",
-  "year": "3rd Year",
-  "bio": "Creative designer with 5 years experience"
-}
 6. Delete a Member (DELETE)
 URL: http://localhost:5000/api/members/[MEMBER_ID]
 Method: DELETE
@@ -223,7 +153,7 @@ curl -X DELETE http://localhost:5000/api/members/65abc123def456ghi789jkl
 - **/members** - View all members
 - **/members/:id** - View member details (with edit/delete)
 - **/add-member** - Add new member form
-
+For More APIs Information Please Refer API TESTING GUIDE
  Member Schema
 
 ```javascript
@@ -246,7 +176,7 @@ The application features a modern, responsive design with:
 - Mobile-responsive grid system
 - Consistent color scheme (purple/blue accent colors)
 
-Usage
+## Usage
 
 1. **Home Page**: View team overview and quick statistics
 2. **View Members**: See all team members in a card layout
