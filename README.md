@@ -113,6 +113,11 @@ API Endpoints
 | PUT | `/api/members/:id` | Update member |
 | DELETE | `/api/members/:id` | Delete member |
 
+## Testing APIs in Browser
+1. Get Team Information
+URL: http://localhost:5000/api/team
+Method: GET
+Expected Response:
  Team API
 
 | Method | Endpoint | Description |
