@@ -58,7 +58,12 @@ fullstacks/
     │   └── index.js       # React entry point
     └── package.json
 ```
+## 🚀 Installation & Setup
 
+> [!IMPORTANT]
+> **Missing `node_modules`?**
+> To keep this repository lightweight, the `node_modules` folders (which contain all the downloaded dependencies) are **not** uploaded to GitHub. 
+> You **must** run `npm install` in *both* the `backend` and `frontend` folders after downloading this project before trying to run `npm start`
 ---
 
 ##  Installation & Setup
