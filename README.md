@@ -9,19 +9,19 @@ A comprehensive full-stack web application designed to efficiently manage team m
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🏷️ **Display Team Name**: Clear overview of your current team.
-- ➕ **Add New Members**: Robust form with built-in validation.
-- 📇 **Card Layout**: View all team members in an elegant grid.
-- 🔍 **Detailed Views**: Inspect individual member details and history.
-- ✏️ **Edit & Update**: Seamlessly modify member information.
-- 🗑️ **Delete**: Safely remove members from the team.
-- 📱 **Fully Responsive**: Beautiful design across all devices and screen sizes.
+-  **Display Team Name**: Clear overview of your current team.
+-  **Add New Members**: Robust form with built-in validation.
+-  **Card Layout**: View all team members in an elegant grid.
+-  **Detailed Views**: Inspect individual member details and history.
+-  **Edit & Update**: Seamlessly modify member information.
+-  **Delete**: Safely remove members from the team.
+-  **Fully Responsive**: Beautiful design across all devices and screen sizes.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React 18** - UI Library
@@ -37,7 +37,7 @@ A comprehensive full-stack web application designed to efficiently manage team m
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 fullstacks/
@@ -61,7 +61,7 @@ fullstacks/
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 Make sure you have the following installed on your machine:
@@ -136,16 +136,16 @@ npm start
 
 ---
 
-## 🗺️ Pages & Routing
+## Pages & Routing
 
-- 🏠 **`/`** - Home page (displays team overview and quick stats)
-- 👥 **`/members`** - View all members in the directory
-- 👤 **`/members/:id`** - View, edit, or delete a specific member's details
-- 📝 **`/add-member`** - Form to add a new member
+-  **`/`** - Home page (displays team overview and quick stats)
+-  **`/members`** - View all members in the directory
+-  **`/members/:id`** - View, edit, or delete a specific member's details
+-  **`/add-member`** - Form to add a new member
 
 ---
 
-## 🗄️ Database Schema
+## Database Schema
 
 **Member Model (`models/Member.js`)**
 ```javascript
@@ -162,25 +162,25 @@ npm start
 
 ---
 
-## 🎨 Design & Styling
+##  Design & Styling
 
 The application features a modern, responsive design with:
-- 🌈 **Gradient Headers** with intuitive navigation
-- 🃏 **Card-based Layouts** for easy scannability
-- ✨ **Smooth Animations** and hover transitions
-- 📱 **Mobile-First Grid** system
-- 💜 **Consistent Color Palette** (Purple/Blue accents)
+- **Gradient Headers** with intuitive navigation
+-  **Card-based Layouts** for easy scannability
+-  **Smooth Animations** and hover transitions
+-  **Mobile-First Grid** system
+-  **Consistent Color Palette** (Purple/Blue accents)
 
 ---
 
-## 💡 Development Tips
+##  Development Tips
 
-- 🔌 **Proxy Setup**: The React frontend is configured with a proxy in `package.json` to seamlessly communicate with the backend port 5000.
-- 🔗 **Relative Paths**: All frontend API requests use relative URLs (e.g., `axios.get('/api/members')`).
+-  **Proxy Setup**: The React frontend is configured with a proxy in `package.json` to seamlessly communicate with the backend port 5000.
+-  **Relative Paths**: All frontend API requests use relative URLs (e.g., `axios.get('/api/members')`).
 
 ---
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 <details>
 <summary><strong>MongoDB Connection Error</strong></summary>
@@ -199,15 +199,12 @@ Ensure the `cors` middleware is properly configured in `server.js`. If you chang
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
-- [ ] 🔐 User authentication (Login/Register)
-- [ ] 🖼️ Member profile pictures upload
-- [ ] 🔍 Search and filter functionality
-- [ ] 🛡️ Roles and permissions management
-- [ ] 📊 Export member data (CSV/PDF)
-- [ ] 📋 Member activity logs
+- [ ]  User authentication (Login/Register)
+- [ ]  Member profile pictures upload
+- [ ]  Search and filter functionality
+- [ ]  Roles and permissions management
+- [ ]  Export member data (CSV/PDF)
+- [ ]  Member activity logs
 
----
-
-*This project is open source and available under the MIT License.*
